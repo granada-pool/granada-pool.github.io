@@ -575,38 +575,26 @@ footer .content-wrapper {
 		position: absolute;
 		top: 45%;
 		left: 45%;
-		/*margin-left: -413px;
-		margin-top: -45px;*/
 	}
   }
 
   @media screen and (max-width: 800px) {
 	h1 {
 		font-size: 50px;
-		color: rgba(3,247,255, 1);
 	}
 	h2 {
-		text-align: center;
 		font-size: 30px;
 	}
 	h3 {
 		font-size: 15px;
-		color:  rgba(211,15,239, 1);
 	}
 
 	header {
 		height: 100%;
-		overflow: hidden;
-		background: black; 
 		background-image: url('../images/logo_mobile.png');
-		background-repeat: no-repeat;
 		background-position: 55% 30%;
-		/*background-attachment: fixed;*/
-		z-index:2;
-		position: relative
 	}
 	.background-black {
-		background: rgba(0,0,0,0.0);
 		height: 100%;
 		position: relative;
 	}
@@ -614,8 +602,6 @@ footer .content-wrapper {
 		position: absolute;
 		top: 60%;
 		left: 20%;
-		/*margin-left: -413px;
-		margin-top: -45px;*/
 	}
 
 	.right {
@@ -631,6 +617,7 @@ footer .content-wrapper {
 
 	.tothetop {
 		padding: 7px 15px;
+		bottom: 0%;
 	}
 
 	.hamburger-wrapper {
@@ -640,6 +627,7 @@ footer .content-wrapper {
 
 	.show-menu {
 		width: 50%;
+		height: 100%;
 	}
 
 	.first{
