@@ -87,8 +87,8 @@ header {
 }
 .heading-text-wrapper {
 	position: absolute;
-	top: 50%;
-	left: 45%;
+	top: 43%;
+	left: 47%;
 	/*margin-left: -413px;
     margin-top: -45px;*/
 }
@@ -353,7 +353,7 @@ section.section-2 {
 }
 
 .first {
-	height: 800px;
+	height: 1150px;
 }
 
 
@@ -447,16 +447,37 @@ section.section-2 {
     margin-top: 30px;
     padding-left: 7%;
 }
+
+.team-member {
+	width: 300px;
+	height: 320px;
+	display: block;
+	float: left;
+}
+
+.team-title {
+	width: 150px;
+	height: 80px;
+	display: block;
+	position: relative;
+	left: 25%
+}
+
+.team-title h4, p{
+	text-align: center;
+}
+
 .team-item {
     width: 275px;
     height: 275px;
-    display: inline-block;
-    border-radius: 100%;
+    display: block;
+    border-radius: 15%;
     background: black;
     margin: 5px;
     overflow: hidden;
     position: relative;
     border: 5px solid #FFFFFF;
+	float: left;
 	transition: box-shadow 0.3s;
 }
 .team-item:hover {
