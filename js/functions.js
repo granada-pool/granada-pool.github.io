@@ -17,7 +17,7 @@ $(document).ready(function(){
         var url = window.location.href; 
         if(url.endsWith("es/")){
           $("h1").typed({
-            strings: ["Únete a la evolución", "Haz staking con GranADA"],
+            strings: ["Únete a la evolución", "Únete a GranADA"],
             typeSpeed: 10
           });
         }else{
