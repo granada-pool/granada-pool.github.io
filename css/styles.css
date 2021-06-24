@@ -88,7 +88,6 @@ a {
 /*header begin*/
 header {
 	height: 100%;
-	overflow: hidden;
 	background: black; 
 	background-image: url('../images/logo_GranADA_Git.png');
 	background-repeat: no-repeat;
@@ -106,8 +105,6 @@ header {
 	position: absolute;
 	top: 45%;
 	left: 45%;
-	/*margin-left: -413px;
-    margin-top: -45px;*/
 }
 .typed-cursor {
 	display: none;
@@ -305,8 +302,8 @@ nav {
 	position: relative;
 	margin: 0 auto;
 	display: block;
-	width: 200px;
-	height: 500px;
+	width: 100%;
+	height: 100%;
 	top: 50%;
 	margin-top: -200px;
 }
@@ -328,7 +325,6 @@ nav a:hover {
     position: absolute;
     bottom: 0;
     left: 50%;
-	/*margin-left: -128px; /*zentriert den Pfeil / hälfte der Boxgrösse abziehen */
 	-webkit-transform: translate(0%, 0);
     -moz-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
@@ -346,9 +342,6 @@ nav a:hover {
 /*arrow end*/
 /*header end*/
 
-/*nav begin*/
-
-/*nav end*/
 .tothetop {
 	padding: 12px 22px;
 	border-radius: 100px;
@@ -639,8 +632,9 @@ footer .content-wrapper {
 
 	.heading-text-wrapper {
 		width: 80%;
-		top: 63%;
-		left: 15%;
+		top: 55%;
+		left: 10%;
+		text-align: center;
 	}
 
 	.right {
@@ -666,7 +660,7 @@ footer .content-wrapper {
 	}
 
 	.show-menu {
-		width: 50%;
+		width: 60%;
 		height: 100%;
 	}
 
@@ -675,17 +669,13 @@ footer .content-wrapper {
 		right: 3%;
 	}
 
-	nav a {
-		width: 95%;
-	}
-
 	.first{
 		height: 3050px;
 		padding: 9% 9%;
 	}
 
 	.icon-section{
-		width: 315px;
+		width: 95%;
 		margin: 7px 0 7px 0;
 	}
 
@@ -698,7 +688,7 @@ footer .content-wrapper {
 	}
 
 	.team-wrapper{  
-		padding-left: 10%;
+		padding: 7%;
 	}
 
 	.team-member {
