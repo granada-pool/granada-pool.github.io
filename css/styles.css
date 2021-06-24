@@ -387,6 +387,7 @@ section.section-2 {
 
 .row {
 	height: 345px;
+	width: 100%;
 }
 
 /*about begin*/
@@ -649,6 +650,10 @@ footer .content-wrapper {
 		margin-right: -3%;
 	}
 
+	.content-wrapper {
+		padding-top: 20%;
+	}
+
 	.tothetop {
 		padding: 7px 15px;
 		bottom: 1%;
@@ -670,8 +675,8 @@ footer .content-wrapper {
 	}
 
 	.first{
-		height: 3050px;
-		padding: 9% 9%;
+		height: 3040px;
+		padding: 15% 9%;
 	}
 
 	.icon-section{
@@ -688,11 +693,12 @@ footer .content-wrapper {
 	}
 
 	.team-wrapper{  
-		padding: 7%;
+		padding: 10%;
 	}
 
 	.team-member {
 		height: 350px;
+		width: 100%;
 	}
 
 	.left{
