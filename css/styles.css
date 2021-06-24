@@ -6,37 +6,51 @@
 	color: #000;
 	font-family: 'Consolas', sans-serif;
 }
+
 html {
 	height: 100%;
 }
+
 body {
 	height: 100%;
 }
+
 ::selection {
 	background: rgba(3,247,255, 1);
 	color: black;
 }
+
 ul {
 	list-style-type: none;
 }
+
 ul li {
 	list-style-type: none;
 }
+
 h1 {
 	font-size: 75px;
 	color: rgba(3,247,255, 1);
 }
+
 h2 {
 	text-align: center;
 	font-size: 40px;
 }
+
 h3 {
 	font-size: 20px;
     color:  rgba(211,15,239, 1);
 }
-p {
-	font-size: 14px;
+
+h4 {
+    font-size: 20px;
 }
+
+p {
+	font-size: 15px;
+}
+
 a {
 	text-decoration: none;
 	color: rgba(211,15,239, 1);
@@ -61,6 +75,7 @@ a {
 	height: 400px;
 	float: right;
 	padding: 10px;
+	margin-right: 5%;
 }
 
 .left {
@@ -250,6 +265,24 @@ header {
 	margin-bottom: 0;
 }
 
+.languages {
+	position: absolute;
+	top: 5%;
+	right: 3%;
+	z-index: 5;
+	width: 60px;
+	height: 60px;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+
+.languages a {
+	font-size: 30px;
+}
+
 .menu {
 	display: none;
 	width: 0%;
@@ -350,7 +383,7 @@ section.section-2 {
 	margin: 0 auto;
     padding: 30px 20px 30px 20px;
     max-width: 1000px;
-	height: 600px important;
+	height: 50%;
 	position: relative;
 }
 
@@ -395,7 +428,7 @@ section.section-2 {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     text-align: center;
-    width: 200px;
+    width: 250px;
     margin: 0 auto;
     display: block;
 }
@@ -447,7 +480,7 @@ section.section-2 {
     margin: 0 auto;
     display: block;
     margin-top: 30px;
-    padding-left: 7%;
+    padding-left: 5%;
 }
 
 .team-member {
@@ -458,11 +491,11 @@ section.section-2 {
 }
 
 .team-title {
-	width: 150px;
+	width: inherit;
 	height: 80px;
 	display: block;
 	position: relative;
-	left: 25%
+	float: left;
 }
 
 .team-title h4, p{
@@ -540,6 +573,11 @@ footer .content-wrapper {
 	padding: 10px 20px;
 }
 /*footer end*/
+@media screen and (max-width: 1800px) {
+	header {
+		background-position: 20% 50%;
+	}
+}
 
 @media screen and (max-width: 1600px) {
 	h1 {
@@ -556,15 +594,8 @@ footer .content-wrapper {
 	}
 
 	header {
-		height: 100%;
-		overflow: hidden;
-		background: black; 
 		background-image: url('../images/logo_reduced.png');
-		background-repeat: no-repeat;
 		background-position: 25% 50%;
-		/*background-attachment: fixed;*/
-		z-index:2;
-		position: relative
 	}
 	.background-black {
 		background: rgba(0,0,0,0.0);
@@ -580,17 +611,19 @@ footer .content-wrapper {
 
   @media screen and (max-width: 800px) {
 	h1 {
-		font-size: 50px;
+		font-size: 55px;
 	}
+
 	h2 {
 		font-size: 30px;
 	}
-	h3 {
-		font-size: 15px;
+
+	h4 {
+		font-size: 20px;
 	}
 
 	p {
-		font-size: 15px;
+		font-size: 17px;
 	}
 
 	header {
@@ -598,26 +631,28 @@ footer .content-wrapper {
 		background-image: url('../images/logo_mobile.png');
 		background-position: 50% 30%;
 	}
+
 	.background-black {
 		height: 100%;
 		position: relative;
 	}
+
 	.heading-text-wrapper {
-		position: absolute;
-		top: 60%;
-		left: 13%;
+		width: 80%;
+		top: 63%;
+		left: 15%;
 	}
 
 	.right {
 		width: 100%;
 		height: 340px;
-		margin-left: -10px;
+		margin-left: -3%;
 	}
 	
 	.center{
 		width: 100%;
 		height: 520px;
-		margin-right: -10px;
+		margin-right: -3%;
 	}
 
 	.tothetop {
@@ -635,12 +670,18 @@ footer .content-wrapper {
 		height: 100%;
 	}
 
+	.languages {
+		top: 2%;
+		right: 3%;
+	}
+
 	nav a {
 		width: 95%;
 	}
 
 	.first{
 		height: 3050px;
+		padding: 9% 9%;
 	}
 
 	.icon-section{
@@ -648,8 +689,16 @@ footer .content-wrapper {
 		margin: 7px 0 7px 0;
 	}
 
+	.icon-overall-text{
+		width: 90%;
+	}
+
 	.scroll-down{
 		left: 43%;
+	}
+
+	.team-wrapper{  
+		padding-left: 10%;
 	}
 
 	.team-member {
