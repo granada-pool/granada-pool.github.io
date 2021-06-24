@@ -14,10 +14,18 @@ $(document).ready(function(){
     });
   });
   $(function(){
-        $("h1").typed({
+        var url = window.location.href; 
+        if(url.endsWith("es")){
+          $("h1").typed({
+            strings: ["Únete a la evolución", "Haz staking con GranADA"],
+            typeSpeed: 10
+          });
+        }else{
+          $("h1").typed({
             strings: ["Join the revolution", "Stake with GranADA"],
             typeSpeed: 10
-        });
+          });
+        }
     });
 	$(".hamburger-wrapper").click(function(){
 	$(".menu").toggleClass("show-menu");
