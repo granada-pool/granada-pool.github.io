@@ -15,7 +15,7 @@ $(document).ready(function(){
   });
   $(function(){
         var url = window.location.href; 
-        if(url.endsWith("es")){
+        if(url.endsWith("es/")){
           $("h1").typed({
             strings: ["Únete a la evolución", "Haz staking con GranADA"],
             typeSpeed: 10
