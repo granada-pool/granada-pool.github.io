@@ -31,6 +31,12 @@ ul li {
 h1 {
 	font-size: 75px;
 	color: rgba(3,247,255, 1);
+	display: none;
+}
+
+h1 span{
+	font-size: 75px;
+	color: rgba(3,247,255, 1);
 }
 
 h2 {
@@ -51,23 +57,38 @@ p {
 	font-size: 15px;
 }
 
+i {
+	color: rgb(31,40,46,1);
+}
+
 a {
 	text-decoration: none;
 	color: rgba(211,15,239, 1);
 	font-size: 14px;
 }
+
+.gran{
+	color: rgba(211,15,239, 1);
+}
+
+.ada{
+	color: rgba(3,247,255, 1);
+}
+
 .clearfix:before,.clearfix:after{
 	content: "";
 	display: table
-	}
+}
+
 .clearfix:after{
 	clear: both
 }
+
 .right {
 	width: 48%;
 	height: 450px;
 	float: left;
-	padding: 10px;
+	margin: 5% 0%;
 }
 
 .center{
@@ -81,30 +102,33 @@ a {
 .left {
 	width: 48%;
 	float: left;
-	padding: 10px;
+	padding: 10% 0%;
+	margin: 10% 0%;
 }
 /*global styles end*/
 
 /*header begin*/
 header {
 	height: 100%;
-	background: black; 
-	background-image: url('../images/logo_GranADA_Git.png');
-	background-repeat: no-repeat;
-	background-position: 25% 50%;
-    /*background-attachment: fixed;*/
+	background: rgb(31,40,46,1); 
 	z-index:2;
 	position: relative
 }
-.background-black {
-	background: rgba(0,0,0,0.0);
+.logo {
+    background-image: url('../images/logo_GranADA_Git.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+    background-attachment: fixed;
 	height: 100%;
+	opacity: 0;
 	position: relative;
+	z-index: 2;
 }
 .heading-text-wrapper {
-	position: absolute;
+	position: fixed;
 	top: 45%;
 	left: 45%;
+	z-index: 0;
 }
 .typed-cursor {
 	display: none;
@@ -263,21 +287,25 @@ header {
 }
 
 .languages {
-	position: absolute;
+	position: fixed;
 	top: 5%;
 	right: 3%;
 	z-index: 5;
 	width: 60px;
 	height: 60px;
-	-webkit-transition: .5s ease-in-out;
-	-moz-transition: .5s ease-in-out;
-	-o-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
 	cursor: pointer;
 }
 
 .languages a {
 	font-size: 30px;
+	-webkit-transition: .3s ease-in-out;
+	-moz-transition: .3s ease-in-out;
+	-o-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.languages a:hover {
+	color: rgba(3,247,255, 1);
 }
 
 .menu {
@@ -295,13 +323,13 @@ header {
 	display: block;
 	background: rgba(211,15,239, 0.9);
 	z-index: 3;	
-	width: 20%;
+	width: 0%;
 }
 nav {
 	filter: none;
 	position: relative;
 	margin: 0 auto;
-	display: block;
+	display: none;
 	width: 100%;
 	height: 100%;
 	top: 50%;
@@ -315,9 +343,11 @@ nav a{
 	margin-bottom: 20px;
 	transition: 0.3s;
 }
-nav a:hover {
+
+.nav-item:hover{
 	color: #000;
 }
+
 /*hamburger end*/
 /*arrow begin*/
 .arrow-down {
@@ -363,12 +393,20 @@ nav a:hover {
 }
 /*cotent begin*/
 section {
-	background: #ffffff;
+	position: relative;
+	background: rgb(31,40,46,1);
 	width: 100%;
-	z-index: 0;
+	z-index: 2;
 }
+
+section h2, li {
+	color: white;
+}
+
 section.section-2 {
-	background: rgba(3,247,255, 0.5);
+	position: relative;
+	background: #8098e4;
+	z-index: 2;
 }
 
 .content-wrapper {
@@ -502,10 +540,9 @@ section.section-2 {
     display: block;
     border-radius: 15%;
     background: black;
-    margin: 5px;
+    margin: 10px;
     overflow: hidden;
     position: relative;
-    border: 5px solid #FFFFFF;
 	float: left;
 	transition: box-shadow 0.3s;
 }
@@ -569,7 +606,7 @@ footer .content-wrapper {
 /*footer end*/
 @media screen and (max-width: 1800px) {
 	header {
-		background-position: 20% 50%;
+		background-position: 50% 50%;
 	}
 }
 
@@ -587,9 +624,10 @@ footer .content-wrapper {
 		color:  rgba(211,15,239, 1);
 	}
 
-	header {
+	.logo {
 		background-image: url('../images/logo_reduced.png');
 		background-position: 25% 50%;
+		background-repeat: no-repeat;
 	}
 	.background-black {
 		background: rgba(0,0,0,0.0);
@@ -604,7 +642,7 @@ footer .content-wrapper {
   }
 
   @media screen and (max-width: 800px) {
-	h1 {
+	h1 span {
 		font-size: 55px;
 	}
 
@@ -620,21 +658,18 @@ footer .content-wrapper {
 		font-size: 17px;
 	}
 
-	header {
+	.logo {
 		height: 100%;
 		background-image: url('../images/logo_mobile.png');
-		background-position: 50% 30%;
-	}
-
-	.background-black {
-		height: 100%;
-		position: relative;
+		background-position: 50% 20%;
+		background-repeat: no-repeat;
 	}
 
 	.heading-text-wrapper {
-		width: 80%;
+		position: fixed;
+		width: 90%;
 		top: 55%;
-		left: 10%;
+		left: 5%;
 		text-align: center;
 	}
 
