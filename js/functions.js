@@ -1,6 +1,11 @@
 $(document).ready(function(){
 
-  var menuWidth = $(window).width() <= 800 ? "60%" : "20%";
+  var $win = $(window);
+  var menuWidth = $win.width() <= 800 ? "60%" : "20%";
+
+  $win.resize(function(){
+    window.location.reload(true);
+  })
 
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
@@ -24,6 +29,25 @@ $(document).ready(function(){
           animateLogo("Join the revolution", "Stake with ");
         }
   });
+
+  $win.scroll(function () {
+    if ($win.scrollTop() == 0){
+      $(".tothetop").animate({
+        opacity: 0
+      }, 10, function(){});
+    }else{
+      $(".tothetop").animate({
+        opacity: 1
+      }, 10, function(){});
+    }
+});
+
+  $("#copyId").click(function(){
+    var poolId = "7a4c1ee9d663dd8d3b1bedf13155cc624c5dfa95f432c30d198cd3c6";
+    navigator.clipboard.writeText(poolId);
+    $("#copyId").css("color","rgba(211,15,239, 0.9)");
+  });
+
 	$(".hamburger-wrapper").click(function(){
 
     if($(this).hasClass("open")){
@@ -36,15 +60,14 @@ $(document).ready(function(){
           },500);
         });
       });
-
     }else{
       $(".menu").toggleClass("show-menu");
       $(".show-menu").animate({
         width: menuWidth
       }, 100, function(){
         setTimeout(function() {
-          $("nav").fadeIn(500, function(){});
-        },100);
+          $("nav").fadeIn(200, function(){});
+        },500);
       });
     }
 
