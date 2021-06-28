@@ -330,6 +330,7 @@ header {
 	z-index: 3;	
 	width: 0%;
 }
+
 nav {
 	filter: none;
 	position: relative;
@@ -340,6 +341,7 @@ nav {
 	top: 50%;
 	margin-top: -200px;
 }
+
 nav a{
 	text-align: center;
 	color: #FFFFFF;
@@ -761,6 +763,11 @@ footer .content-wrapper {
 
 	p {
 		font-size: 17px;
+	}
+
+	
+	nav a{	
+		font-size: 30px;
 	}
 
 	.staking-info p {

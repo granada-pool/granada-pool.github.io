@@ -3,10 +3,6 @@ $(document).ready(function(){
   var $win = $(window);
   var menuWidth = $win.width() <= 800 ? "60%" : "20%";
 
-  $win.resize(function(){
-    window.location.reload(true);
-  })
-
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
