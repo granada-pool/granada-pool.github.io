@@ -828,6 +828,19 @@ footer .content-wrapper {
 	.hamburger-wrapper {
 		top: 15px;
 		left: 15px;
+		width: 50px;
+	}
+
+	.hamburger-wrapper.open span:nth-child(1){
+		top: 3px;
+	}
+
+	.hamburger-wrapper span:nth-child(2) {
+		top: 15px;
+	}
+
+	.hamburger-wrapper span:nth-child(3) {
+		top: 30px;
 	}
 
 	.show-menu {
