@@ -151,6 +151,7 @@ header {
   display: block;
   width: 64px;
   height: 64px;
+  margin: 0px -35px;
   border: 2px solid #FFF;
   background-size: 14px auto;
   border-radius: 15%;
@@ -868,10 +869,6 @@ footer .content-wrapper {
 		padding: 20% 10%;
 	}
 
-	.scroll-down{
-		left: 43%;
-	}
-
 	.team-wrapper{  
 		padding: 10%;
 	}
@@ -890,6 +887,12 @@ footer .content-wrapper {
 		margin: 5% 0%;
 		padding: 0%;
 		width: 100%;
+	}
+  }
+
+  @media screen and (max-width: 640px) {
+	.staking-info p {
+		font-size: 10px;
 	}
   }
   
