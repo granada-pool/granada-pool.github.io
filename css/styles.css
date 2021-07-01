@@ -520,6 +520,11 @@ section.section-2 {
    color: white;
 }
 
+.text-outline{
+	-webkit-text-stroke-width: 0.001em;
+    -webkit-text-stroke-color: white;
+ }
+
 .faq-section {
     background: rgb(31,40,46,0.5); 
     display: block;
