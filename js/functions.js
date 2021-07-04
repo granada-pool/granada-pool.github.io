@@ -95,7 +95,7 @@ $(document).ready(function(){
         opacity: 0
       }, 500, function(){
         $(this).animate({opacity: 1}, 500, function(){
-          $(this).animate({"background-position-x": "20%"}, 500, function(){
+          $(this).animate({"background-position-x": $win.width() <= 1500 ? "15%" : "20%"}, 500, function(){
             animateTitle(string1, string2);
           });
         });
