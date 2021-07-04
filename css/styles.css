@@ -650,25 +650,20 @@ section.section-2 {
 	float: left;
 	transition: box-shadow 0.3s;
 	outline:1px solid transparent;
-    background-blend-mode: luminosity;
-	
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
 
 .vito {
 	background-image: url('../images/vito.jpg');
-	background-color: rgba(3,247,255, 1);
 }
 
 .gian {
 	background-image: url('../images/gian.jpg');
-	background-color: rgba(3,247,255, 1);
 }
 
 .carolina {
 	background-image: url('../images/carolina.jpg');
-	background-color: rgba(211,15,239, 1);
 }
 
 .team-item:hover {
