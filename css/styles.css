@@ -520,9 +520,12 @@ section.section-2 {
    color: white;
 }
 
-.text-outline{
-	-webkit-text-stroke-width: 0.007em;
-    -webkit-text-stroke-color: white;
+.cyan-link{
+	color:rgba(3,247,255, 1);
+ }
+
+ .cyan-link:hover{
+	color:rgba(211,15,239, 1);
  }
 
 .faq-section {
