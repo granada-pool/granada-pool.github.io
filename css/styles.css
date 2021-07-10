@@ -719,14 +719,18 @@ section.section-2 {
 #contact .social-wrapper i:last-child {
     margin-right: 0px;
 }
-#fb-root > div.fb_dialog.fb_dialog_advanced.fb_shrink_active {
-	right: initial !important;
-	left: 18pt;
-	z-index: 9999999 !important;
+
+/* This is for the circle position */
+.fb_dialog.fb_dialog_advanced {
+    left: 18pt;
 }
-.fb-customerchat.fb_invisible_flow.fb_iframe_widget iframe {
-	right: initial !important;
-	left: 18pt !important;
+
+/* The following are for the chat box, on display and on hide */
+iframe.fb_customer_chat_bounce_in_v2 {
+    left: 9pt;
+}
+iframe.fb_customer_chat_bounce_out_v2 {
+    left: 9pt;
 }
 /*contact end*/
 
